@@ -20,9 +20,9 @@ export class MainMenuScene extends Scene {
     new MenuButton(this, 100, 150, 'Start Game', () => {
       this.scene.start('Game');
     });
-    // Example of a second start screen option
-    // new MenuButton(this, 100, 200, 'Options', () => {
-    //   this.scene.start('Options');
-    // });
+
+    new MenuButton(this, 100, 200, 'Endless Mode', () => {
+      this.scene.start('Platform');
+    });
   }
 }
